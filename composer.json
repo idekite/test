@@ -1,0 +1,30 @@
+{
+    "name": "idekite/test",
+    "description": "test",
+    "type": "test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Feri Harjulianto",
+            "email": "feriharjulianto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "idekite\\test\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "idekite\\test\\testServiceProvider"
+            ],
+            "aliases": {
+                "test": "idekite\\test\\testFacade"
+            }
+        }
+    }
+
+}
